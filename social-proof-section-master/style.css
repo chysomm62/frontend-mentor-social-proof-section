@@ -37,7 +37,7 @@ body {
   font-family: "Spartan", sans-serif;
   max-width: 100%;
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 4rem 1rem 0;
   font-size: 15px;
 }
 
@@ -77,12 +77,13 @@ select {
 header h1 {
   color: hsl(300, 43%, 22%);
   font-weight: 700;
+  line-height: 1;
 }
 
 header p {
   color: hsl(303, 10%, 53%);
   padding: 2rem 0;
-  font-size: 0.87rem;
+  font-size: 0.8rem;
   line-height: 1.5;
 }
 
@@ -92,7 +93,7 @@ header p {
 }
 
 .ratings {
-  margin: 0.5rem;
+  margin: 0.5rem 0;
   padding: 0.75rem;
   background-color: hsl(300, 24%, 96%);
   border-radius: 0.5rem;
@@ -102,5 +103,56 @@ header p {
   padding-top: 0.75rem;
   color: hsl(300, 43%, 22%);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+}
+
+main {
+  padding-top: 2rem;
+}
+
+main section {
+  background-color: hsl(300, 43%, 22%);
+  padding: 2rem 1.5rem;
+  color: hsl(0, 0%, 100%);
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  text-align: left;
+}
+
+main section header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.5rem;
+}
+
+.texts {
+  margin-left: 1rem;
+  line-height: 1.7;
+}
+
+.pinkish {
+  color: hsl(333, 80%, 67%);
+  padding: 0;
+}
+
+.img-contain img {
+  border-radius: 50%;
+  max-width: 2.5rem;
+}
+
+blockquote {
+  font-size: 0.75rem;
+  line-height: 1.8;
+  padding-top: 1.5rem;
+}
+
+.attribution {
+  margin-top: 5rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
