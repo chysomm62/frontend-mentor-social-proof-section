@@ -78,12 +78,14 @@ header h1 {
   color: hsl(300, 43%, 22%);
   font-weight: 700;
   line-height: 1;
+  font-size: 2rem;
 }
 
 header p {
   color: hsl(303, 10%, 53%);
+  font-weight: 500;
   padding: 2rem 0;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   line-height: 1.5;
 }
 
@@ -93,7 +95,7 @@ header p {
 }
 
 .ratings {
-  margin: 0.5rem 0;
+  margin-bottom: 1rem;
   padding: 0.75rem;
   background-color: hsl(300, 24%, 96%);
   border-radius: 0.5rem;
@@ -108,11 +110,13 @@ header p {
 
 main {
   padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 main section {
   background-color: hsl(300, 43%, 22%);
-  padding: 2rem 1.5rem;
+  padding: 2rem;
   color: hsl(0, 0%, 100%);
   margin: 1rem 0;
   border-radius: 0.5rem;
@@ -135,6 +139,7 @@ main section header {
 .pinkish {
   color: hsl(333, 80%, 67%);
   padding: 0;
+  font-size: 0.7rem;
 }
 
 .img-contain img {
@@ -155,4 +160,75 @@ blockquote {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    padding: 6rem;
+    padding-bottom: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container header {
+    width: 45%;
+  }
+  .container header {
+    text-align: left;
+  }
+  header h1 {
+    font-size: 4rem;
+  }
+  header p {
+    font-size: 1.15rem;
+    line-height: 2;
+  }
+  .rating-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    gap: 1;
+  }
+  .ratings {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    width: 90%;
+    align-self: flex-end;
+  }
+  .ratings p {
+    padding-top: 0;
+    padding-left: 2rem;
+    font-size: 1rem;
+  }
+  .ratings:first-of-type {
+    align-self: flex-start;
+  }
+  .ratings:nth-of-type(2) {
+    align-self: center;
+  }
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    min-height: 43vh;
+  }
+  main section {
+    flex: 1 1 0;
+    max-width: 32%;
+    height: 90%;
+  }
+  blockquote {
+    font-size: 0.94rem;
+  }
+  main section:first-of-type {
+    align-self: flex-start;
+  }
+  main section:last-of-type {
+    align-self: flex-end;
+  }
 }
