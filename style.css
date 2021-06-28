@@ -39,6 +39,10 @@ body {
   text-align: center;
   padding: 4rem 1rem 0;
   font-size: 15px;
+  background-image: url(./images/bg-pattern-bottom-mobile.svg),
+    url(./images/bg-pattern-top-mobile.svg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, no-repeat;
 }
 
 /* A elements that don't have a class get default styles */
@@ -166,6 +170,11 @@ blockquote {
   body {
     padding: 6rem;
     padding-bottom: 0;
+    max-width: 1440px;
+    background-image: url(./images/bg-pattern-bottom-desktop.svg),
+      url(./images/bg-pattern-top-desktop.svg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, no-repeat;
   }
   .container {
     display: flex;
@@ -178,7 +187,7 @@ blockquote {
     text-align: left;
   }
   header h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   header p {
     font-size: 1.15rem;
@@ -223,7 +232,7 @@ blockquote {
     height: 90%;
   }
   blockquote {
-    font-size: 0.94rem;
+    font-size: 0.85rem;
   }
   main section:first-of-type {
     align-self: flex-start;
