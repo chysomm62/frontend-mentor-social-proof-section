@@ -224,7 +224,7 @@ blockquote {
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    min-height: 43vh;
+    min-height: 50vh;
   }
   main section {
     flex: 1 1 0;
